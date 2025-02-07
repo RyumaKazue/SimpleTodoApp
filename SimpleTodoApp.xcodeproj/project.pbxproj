@@ -11,6 +11,9 @@
 		18DFEE122D548BA70063D81A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFEE112D548BA70063D81A /* ContentView.swift */; };
 		18DFEE142D548BAA0063D81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DFEE132D548BAA0063D81A /* Assets.xcassets */; };
 		18DFEE172D548BAA0063D81A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DFEE162D548BAA0063D81A /* Preview Assets.xcassets */; };
+		18DFEE1E2D55BA260063D81A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFEE1D2D55BA260063D81A /* ViewModel.swift */; };
+		18DFEE202D55BA3D0063D81A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFEE1F2D55BA3D0063D81A /* DatabaseManager.swift */; };
+		18DFEE222D55BA630063D81A /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFEE212D55BA630063D81A /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		18DFEE112D548BA70063D81A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18DFEE132D548BAA0063D81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18DFEE162D548BAA0063D81A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18DFEE1D2D55BA260063D81A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		18DFEE1F2D55BA3D0063D81A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		18DFEE212D55BA630063D81A /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				18DFEE0F2D548BA70063D81A /* SimpleTodoAppApp.swift */,
 				18DFEE112D548BA70063D81A /* ContentView.swift */,
+				18DFEE1D2D55BA260063D81A /* ViewModel.swift */,
+				18DFEE1F2D55BA3D0063D81A /* DatabaseManager.swift */,
+				18DFEE212D55BA630063D81A /* Todo.swift */,
 				18DFEE132D548BAA0063D81A /* Assets.xcassets */,
 				18DFEE152D548BAA0063D81A /* Preview Content */,
 			);
@@ -111,6 +120,9 @@
 				Base,
 			);
 			mainGroup = 18DFEE032D548BA70063D81A;
+			packageReferences = (
+				18DFEE232D55DF7C0063D81A /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 18DFEE0D2D548BA70063D81A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DFEE202D55BA3D0063D81A /* DatabaseManager.swift in Sources */,
 				18DFEE122D548BA70063D81A /* ContentView.swift in Sources */,
+				18DFEE1E2D55BA260063D81A /* ViewModel.swift in Sources */,
 				18DFEE102D548BA70063D81A /* SimpleTodoAppApp.swift in Sources */,
+				18DFEE222D55BA630063D81A /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +359,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18DFEE232D55DF7C0063D81A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 18DFEE042D548BA70063D81A /* Project object */;
 }
